@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="public/js/jquery-3.3.1.min.js"></script>
+       <link href="public/css/chat.css" rel="stylesheet">
+        </head>
+        <body>
+            <input id="setname" type="text">
+            <input id="Surname" type="button" value="登录">
+            <div>
+            <div class="charname">
+
+            </div>
+           <div class="charcon">
+
+           </div>
+        </div>
+           <input type="text" id="contxt"><input type="button" id="send" value="send">
+           <!--语音模块-->
+           <div>
+            <audio autoplay></audio>
+            <input onclick="startRecording()" type="button" value="录音" />
+            <input onclick="stopRecording()" type="button" value="停止" />
+            <input onclick="playRecording()" type="button" value="播放" />
+            <input  id="submit" type="button" value="提交" /><!---onclick="uploadAudio()"-->
+            <br />
+            <div id="recordingslist"></div>
+        </div>
+        </body>
+        <script src="public/wechat.js"> </script>
+   
+</html>
